@@ -19,6 +19,7 @@
         'security/ir.model.access.csv',
         'views/academy_menuitems.xml',
         'views/course_views.xml',
+        'view/session_views.xml',
     ],
     'demo': [
         'demo/academy_demo.xml',
