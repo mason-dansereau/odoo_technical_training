@@ -12,7 +12,7 @@
                 </xpath>
 
                 <field name="partner_id" position="before">
-                    <field name="instructor_id" attrs="{'invisible':[('session_id),'=',False]}"/>
+                    <field name="instructor_id" attrs="{'invisible':[('session_id','=',False)]}"/>
                 </field>
 
                 <xpath expr="//sheet//notebook" position="inside">
