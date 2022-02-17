@@ -29,6 +29,14 @@ class Session(models.Model):
                            inverse='_inverse_end_date',
                            store=True)
 
+    state = fields.Selection(string='States',
+                             selection=[('draft', 'Draft'),
+                                        ('open', 'In Progress'),
+                                        ('done', 'Done'),
+                                        ('canceled', 'Canceled')],
+                             default='draft',
+                             required=True)
+
     @api.depends('start_date', 'duration')
     def _compute_end_date(self):
         for record in self:
