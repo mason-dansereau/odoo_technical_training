@@ -24,7 +24,7 @@
 
         <act_window id="launch_sale_wizard"
                     name="Create Sale Order"
-                    blinding_model="academy.session"
+                    binding_model="academy.session"
                     res_model="academy.sale.wizard"
                     view_mode="form"
                     target="new"/>
